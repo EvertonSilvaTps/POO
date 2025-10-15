@@ -10,13 +10,10 @@ namespace SistemaDeNotificacoes
     {
 
 
-        public override void Enviar()
+        public override void Enviar(string mensagem)
         {
-            throw new NotImplementedException();
+            base.Enviar(mensagem);
+            Console.WriteLine($"NotificaçãoSMS enviado!");
         }
-
-
-
-
     }
 }

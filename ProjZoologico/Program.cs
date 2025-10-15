@@ -1,6 +1,5 @@
 ﻿using ProjZoologico;
 
-
 void CadastroAnimal()
 {   
     Console.WriteLine("   Cadastro do Animal    \n\n");

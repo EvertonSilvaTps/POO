@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
+using .Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,6 +11,14 @@ namespace ProjZoologico
     {
         private string nome;
         private int idade;
+
+        //private int id;  // Atributo privado
+
+        //public int Id  // A propriedade está publica, manipulável
+        //{
+        //    get { return idade; }
+        //    set { idade = value; }
+        //}
 
 
         public abstract void EmitirSom();

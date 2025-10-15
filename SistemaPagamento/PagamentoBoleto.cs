@@ -9,17 +9,12 @@ namespace SistemaPagamento
 {
     public class PagamentoBoleto : Pagamento
     {
-        public string Beneficiario;
-        public string Pagador;
-        public double Desconto;
-
-
-        public override void ProcessarPagamento()
+        public override void ProcessarPagamento(DateTime dt, decimal valor)
         {
-            Console.WriteLine("Boleto Bancário - À Vista");
-            Console.WriteLine("Cedente / Beneficiário: " + this.Beneficiario);
-            Console.WriteLine("Sacado / Pagador: " + Pagador);
-            Console.WriteLine("Desconto: " + this.Desconto);
+            this.setValor(valor);
+            this.setDataDePagamento(dt);
+            Console.WriteLine("Pagamento efetuado com Boleto! R$ " + valor);
+            Console.WriteLine(dt);
         }
 
     }

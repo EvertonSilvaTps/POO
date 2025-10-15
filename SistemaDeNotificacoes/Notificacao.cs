@@ -8,10 +8,10 @@ namespace SistemaDeNotificacoes
 {
     public abstract class Notificacao
     {
-        public string Destinatario;
-
-
-        public abstract void Enviar();
+        public virtual void Enviar(string mensagem)
+        {
+            Console.WriteLine($"Enviando notificação: {mensagem}");
+        }
 
 
 
